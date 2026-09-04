@@ -1,0 +1,35 @@
+# Local backups and exported data
+backup/
+backups/
+*.backup
+*.bak
+*.json
+*.jsonl
+*.zip
+
+# Documents and receipt media
+*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+*.heic
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Temporary and editor files
+tmp/
+temp/
+*.tmp
+*.temp
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
