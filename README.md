@@ -7,6 +7,12 @@ BuchWerk brings income, expenses, receipts, PDF documents, employee records, and
 **Languages:** Deutsch · English · Türkçe · Nederlands  
 **Status:** Portfolio/demo project — selected workflows manually verified; production readiness is not established.
 
+## Live Demo
+
+[**Open BuchWerk in your browser →**](https://hosman1453-cmyk.github.io/buchwerk/)
+
+The public demo starts with an empty browser-local workspace. Use fictional data only. Data entered in the demo belongs to that browser profile and origin; it is not written back to this GitHub repository.
+
 ## What you can do
 
 - **Understand the numbers:** annual income, expenses, profit/loss, personnel costs, monthly charts, and category breakdowns.
@@ -89,7 +95,7 @@ Selected workflows were manually checked by the project owner on localhost durin
 - Accessing a historical year and correcting a transaction date.
 - Reconciliation of dashboard counts and totals after reviewing migration duplicates and the incorrect date.
 
-An exported backup was separately checked for embedded receipt content and PDF size/hash consistency. The submitted HTML also passed an inline JavaScript syntax check. These checks are **not** a complete browser regression or security audit.
+An exported backup was separately checked for embedded receipt content and PDF size/hash consistency. The submitted HTML also passed an inline JavaScript syntax check. On 5 September 2026, the GitHub Pages deployment returned HTTP `200` and rendered the dashboard and navigation with an empty demo state. These checks are **not** a complete browser regression or security audit.
 
 ### Known limitations and next steps
 
@@ -98,6 +104,18 @@ An exported backup was separately checked for embedded receipt content and PDF s
 - Storage quota failures, eviction, and cross-browser behavior still need broader testing.
 - AI extraction is fallible; manual confirmation remains necessary.
 - Automated browser regression coverage and dependency/security review remain future work.
+
+## Repository Evidence
+
+| Capability | Repository evidence | Verification limit |
+| --- | --- | --- |
+| Multilingual DE/EN/TR/NL interface | [`index.html`](index.html) and the [live demo](https://hosman1453-cmyk.github.io/buchwerk/) | Interface is implemented in one static client-side file |
+| Income, expense, employee, reporting and working-time workflows | [`index.html`](index.html) | Browser-local demo; no accounting or payroll certification claim |
+| localStorage and IndexedDB persistence | [`index.html`](index.html) | Data is tied to the browser profile and site origin |
+| Full Backup validation, preview, restore journal and document reconstruction | [`index.html`](index.html) | Selected manual checks only; restore is not guaranteed to be atomic across storage systems |
+| Excel, PDF and JSON exports | [`index.html`](index.html) | Export results require independent review |
+| Optional Gemini-assisted receipt extraction | [`index.html`](index.html) | User-supplied browser key; documents are sent to Google and AI output must be verified |
+| Protection against accidentally committing common backup, document and secret files | [`.gitignore`](.gitignore) | Ignore rules reduce risk but do not replace review before every commit |
 
 ## Technology and design
 
