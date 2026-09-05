@@ -9,7 +9,7 @@ BuchWerk brings income, expenses, receipts, PDF documents, employee records, and
 
 ## Live Demo
 
-[**Open BuchWerk in your browser →**](https://hosman1453-cmyk.github.io/buchwerk/)
+[**Open BuchWerk in your browser →**](https://osman-karabenli.github.io/buchwerk/)
 
 The public demo starts with an empty browser-local workspace. Use fictional data only. Data entered in the demo belongs to that browser profile and origin; it is not written back to this GitHub repository.
 
@@ -109,7 +109,7 @@ An exported backup was separately checked for embedded receipt content and PDF s
 
 | Capability | Repository evidence | Verification limit |
 | --- | --- | --- |
-| Multilingual DE/EN/TR/NL interface | [`index.html`](index.html) and the [live demo](https://hosman1453-cmyk.github.io/buchwerk/) | Interface is implemented in one static client-side file |
+| Multilingual DE/EN/TR/NL interface | [`index.html`](index.html) and the [live demo](https://osman-karabenli.github.io/buchwerk/) | Interface is implemented in one static client-side file |
 | Income, expense, employee, reporting and working-time workflows | [`index.html`](index.html) | Browser-local demo; no accounting or payroll certification claim |
 | localStorage and IndexedDB persistence | [`index.html`](index.html) | Data is tied to the browser profile and site origin |
 | Full Backup validation, preview, restore journal and document reconstruction | [`index.html`](index.html) | Selected manual checks only; restore is not guaranteed to be atomic across storage systems |
